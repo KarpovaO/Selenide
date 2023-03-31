@@ -1,5 +1,6 @@
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.WebDriver;
 
 import java.time.Duration;
 import java.time.LocalDate;
@@ -11,6 +12,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class DeliveryForCardTest {
+    private static WebDriver driver;
     @Test
     void shouldRegisterCardWithDelivery() {
         LocalDate meetingDate = LocalDate.now().plusDays(3);
