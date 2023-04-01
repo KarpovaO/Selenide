@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class DeliveryForCardTest {
-    private static WebDriver driver;
+  
     @Test
     void shouldRegisterCardWithDelivery() {
         LocalDate meetingDate = LocalDate.now().plusDays(3);
