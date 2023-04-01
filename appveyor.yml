@@ -12,10 +12,8 @@ install:
 
  # переходим в директорию с приложением и запускаем SUT (& означает, что в фоновом режиме - не блокируем терминал для запуска тестов)
 cd ./artifacts
-java -jar ./app-card-delivery.jar &
+java -jar ./app-card-delivery.jar 
 build_script:
-
-sh:
 sh: echo "$PWD"
 sh: chmod +x gradlew
 sh: ./gradlew test --info # запускаем
