@@ -12,9 +12,10 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class DeliveryForCardTest {
-  
+
     @Test
     void shouldRegisterCardWithDelivery() {
+        Configuration.headless = true;
         LocalDate meetingDate = LocalDate.now().plusDays(3);
         String meetingDateStr = meetingDate.format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
 
