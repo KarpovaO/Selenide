@@ -12,4 +12,6 @@ install:
 - cd ./artifacts
 - java -jar ./app-card-delivery.jar &
 build_script:
-sh: echo "$PWD"; chmod +x gradlew; ./gradlew test --info # запускаем
+  - sh: echo "$PWD"
+  - sh: chmod +x gradlew
+  - sh: ./gradlew test --info  # запускаем тест, флаг --info позволяет выводить больше информации
