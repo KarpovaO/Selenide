@@ -9,7 +9,6 @@ branches:
 build: off # будем использовать свой скрипт сборки
 
 install:
-- cd ./artifacts
 - java -jar ./app-card-delivery.jar &
 build_script:
   - sh: echo "$PWD"
