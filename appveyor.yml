@@ -13,4 +13,4 @@ install:
 build_script:
   - sh: echo "$PWD"
   - sh: chmod +x gradlew
-  - sh: ./gradlew test --info  # запускаем тест, флаг --info позволяет выводить больше информации
+  - sh: ./gradlew test -Dselenide.headless=true --info  # запускаем тест, флаг --info позволяет выводить больше информации
